@@ -25,7 +25,7 @@ body {
 }
 
 .bg-motherboard-dev {
-    background-image: url("../assets/img/publicbackgrounds/layout.jpg");
+    background-image: url("../assets/img/publicbackgrounds/bg-motherboard-dev.jpg");
 }
 
 .min-vh-90 {
@@ -36,7 +36,7 @@ body {
     background-color: rgba(255, 255, 255, 0.94); 
 }
 
-.f-seze-3 {
+.f-size-3 {
     font-size: 3rem;
 }
 
@@ -48,7 +48,7 @@ body {
     }
 
     .bg-motherboard-dev {
-        background-image: url("../assets/img/publicbackgrounds/logo1.jpg");
+        background-image: url("../assets/img/publicbackgrounds/bg-motherboard-dev.jpg");
     }
 
 }
