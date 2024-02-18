@@ -2,6 +2,58 @@
 <html lang="en">
 
 <head>
+    <!-- HTML !-->
+    <style>
+
+        /* CSS */
+
+
+        .sergiu{
+            background-color: pink;
+            color: green;
+            width: 100px;
+            height: 100px;
+        }
+
+        .button-52 {
+            font-size: 16px;
+            font-weight: 200;
+            letter-spacing: 1px;
+            padding: 13px 20px 13px;
+            outline: 0;
+            border: 1px solid black;
+            cursor: pointer;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+            .button-52:after {
+                content: "";
+                background-color: #FFE54C;
+                width: 100%;
+                z-index: -1;
+                position: absolute;
+                height: 100%;
+                top: 7px;
+                left: 7px;
+                transition: 0.2s;
+            }
+
+            .button-52:hover:after {
+                top: 0px;
+                left: 0px;
+            }
+
+        @media (min-width: 768px) {
+            .button-52 {
+                padding: 13px 50px 13px;
+            }
+        }
+    </style>
+    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Client</title>
@@ -16,14 +68,20 @@
     <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
 </head>
 
-<body>
+<body style=" background-image: url('assets/img/publicbackgrounds/bg-motherboard-dev.jpg')">
     <div id="app">
         <svg class="loading-progress">
             <circle r="40%" cx="50%" cy="50%" />
             <circle r="40%" cx="50%" cy="50%" />
         </svg>
         <div class="loading-progress-text"></div>
+
     </div>
+
+    <button class="button-52" role="button">XXXXX</button>
+
+    <button class="btn btn-danger">  George </button>
+
 
     <div id="blazor-error-ui">
         An unhandled error has occurred.

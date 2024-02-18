@@ -1,16 +1,23 @@
-﻿<h3>Navbar</h3>
-
+﻿<nav class= navbar nav-underline navbar-expand-lg d-flex navbar-light shadow-no-hover justify-content-between align-items-center pb-lg-3">
+    <a href ="/" class=" navbar-brand md-f-size-1-5 text-dark ps-2 m-0 mx-lg-5 fw-bold"> George Hira </a>
+</nav>
 @code 
 {
-    // Public and CamelCase beacause C# properties are methods.
-    [Inject] public NavigationManager NavigationManager { get; set; }
+    // C# properties are methods.
+    [Inject] public NavigationManager NavigationManager
+    { 
+        get; set;
+    }
+
 
     private const string HomePageUri = "/";
     private const string BlogPageUri = "/blog";
 
+    
+
     private bool IsPageActive(string pageToCheckUri)
     {
-        // Skip(3) to remore https://domainname/
+        // Skip(3) to remove https://domainname/
         string[] currentUriSplitBetweenSlashes = NavigationManager.Uri.Split('/').Skip(3).ToArray();
 
         if (pageToCheckUri == HomePageUri)
